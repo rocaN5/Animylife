@@ -54,18 +54,16 @@ header{
                 }
             }
         }
-
         .logo{
             position: relative;
             width: 150px;
             height: 50px;
             display: block;
-            background-image: url(/img/header/logo.png);
+            background-image: url(../img/header/logo.png);
             background-size: 100%;
             background-position: center center;
             background-repeat: no-repeat;
         }
-
         .menu{
             position: absolute;
             display: none;
@@ -76,20 +74,29 @@ header{
             top: 100%;
             border-bottom-left-radius: 6px;
             border-bottom-right-radius: 6px;
-            transition: 200ms;
-            height: 22rem;
+            height: 0;
             overflow: hidden;
             ul{
+                width: 14rem;
                 color: #fff;
                 li{
                     font-family: "Robot-light";
-                    padding: 10px 20px;
-                    padding-right: 125px;
                     list-style-type: none;
-                    a{
+                    a{    
                         text-decoration: none;
-                        color: #fff;
+                        color: #aaa;
                         font-family: "Roboto-light";
+                        position: relative;
+                        display: block;
+                        width: 12rem;
+                        transition: 100ms;
+                        padding: 10px 20px;
+                        font-size: 1.0rem;
+                        text-transform: uppercase;
+                        &:hover{
+                            background: #0f0f0f;
+                            transition: 100ms;
+                        }
                     }
                 }
             }
@@ -98,8 +105,32 @@ header{
                 display: flex;    
                 transition: 200ms;
                 min-height: 0;
-                height: 0;
                 overflow: hidden;
+            }
+        }
+
+        .search{
+            width: 30%;
+            margin-left: 2rem;
+            display: flex;
+            form{
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 80%;
+                height: 40px;
+                input{    
+                    width: 100%;
+                    height: 100%;
+                    background-color: $color-3;
+                    width: 100%;
+                    color: #fff;
+                    position: relative;
+                    padding-left: 20px;
+                    border-radius: 10px;
+                    font-family: "Roboto-regular";
+                    text-transform: uppercase;
+                }
             }
         }
     }

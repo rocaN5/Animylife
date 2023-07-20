@@ -10,25 +10,13 @@
   font-style: normal;
   font-weight: normal;
   font-family: "Roboto-Regular";
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
 @font-face {
   font-style: normal;
   font-weight: normal;
   font-family: "Roboto-light";
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
-}
-@font-face {
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Roboto-light";
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
-}
-@font-face {
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Roboto-light";
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  src: url(../fonts/Roboto-Light.ttf) format("truetype");
 }
 /* ••• Fonts End ••• */
 /* ••• Header ••• */
@@ -87,7 +75,7 @@ header .container__start .logo {
   width: 150px;
   height: 50px;
   display: block;
-  background-image: url(/img/header/logo.png);
+  background-image: url(../img/header/logo.png);
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -102,30 +90,62 @@ header .container__start .menu {
   top: 100%;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  transition: 200ms;
-  height: 22rem;
+  height: 0;
   overflow: hidden;
 }
 header .container__start .menu ul {
+  width: 14rem;
   color: #fff;
 }
 header .container__start .menu ul li {
   font-family: "Robot-light";
-  padding: 10px 20px;
-  padding-right: 125px;
   list-style-type: none;
 }
 header .container__start .menu ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #aaa;
   font-family: "Roboto-light";
+  position: relative;
+  display: block;
+  width: 12rem;
+  transition: 100ms;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+header .container__start .menu ul li a:hover {
+  background: #0f0f0f;
+  transition: 100ms;
 }
 header .container__start .menu.toggled {
   display: flex;
   transition: 200ms;
   min-height: 0;
-  height: 0;
   overflow: hidden;
+}
+header .container__start .search {
+  width: 30%;
+  margin-left: 2rem;
+  display: flex;
+}
+header .container__start .search form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+}
+header .container__start .search form input {
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-family: "Roboto-regular";
+  text-transform: uppercase;
 }
 
 /* ••• Header End ••• */
