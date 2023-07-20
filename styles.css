@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* ••• Fonts ••• */
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto-light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto-light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto-light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto-light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+/* ••• Fonts End ••• */
+/* ••• Header ••• */
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #1c1c1c;
+  align-items: center;
+  justify-content: center;
+}
+header .container__start {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: #1c1c1c;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header .container__start button.menu__button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: transparent;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  cursor: pointer;
+  margin: 20px;
+}
+header .container__start button.menu__button i {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: 0;
+  transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease;
+}
+header .container__start button.menu__button.active i:nth-child(1) {
+  transform: rotate(44deg) translate(2px, -4px);
+  width: 32px;
+}
+header .container__start button.menu__button.active i:nth-child(2) {
+  opacity: 0;
+}
+header .container__start button.menu__button.active i:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, 4px);
+  width: 32px;
+}
+header .container__start .logo {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  display: block;
+  background-image: url(/img/header/logo.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+header .container__start .menu {
+  position: absolute;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #1c1c1c;
+  top: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: 200ms;
+  height: 22rem;
+  overflow: hidden;
+}
+header .container__start .menu ul {
+  color: #fff;
+}
+header .container__start .menu ul li {
+  font-family: "Robot-light";
+  padding: 10px 20px;
+  padding-right: 125px;
+  list-style-type: none;
+}
+header .container__start .menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto-light";
+}
+header .container__start .menu.toggled {
+  display: flex;
+  transition: 200ms;
+  min-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ••• Header End ••• */
+/* ••• Footer ••• */
+/* ••• Footer END ••• */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e0e;
+}
+
+.remove {
+  position: relative;
+  width: 100%;
+  height: 500%;
+  z-index: -4;
+}/*# sourceMappingURL=styles.css.map */
